@@ -1,0 +1,56 @@
+name: fitness
+description: Aplicación de rutinas de caminata, trote y carrera con sensores en tiempo real para Android.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Estado y ciclo de vida
+  provider: ^6.1.2
+
+  # Biometría y seguridad del PIN
+  local_auth: ^2.3.0
+  flutter_secure_storage: ^9.2.2
+  crypto: ^3.0.5
+
+  # Sensores de movimiento (podómetro, acelerómetro y giroscopio)
+  pedometer: ^4.0.2
+  sensors_plus: ^6.1.0
+
+  # GPS y mapa interactivo con Google Maps
+  geolocator: ^13.0.1
+  google_maps_flutter: ^2.9.0
+
+  # Permisos en tiempo de ejecución
+  permission_handler: ^11.3.1
+
+  # Persistencia local (SQLite y preferencias)
+  sqflite: ^2.3.3+1
+  path: ^1.9.0
+  shared_preferences: ^2.3.2
+
+  # Formato de fechas y números
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/fitness.png
+
+flutter_launcher_icons:
+  android: true
+  ios: false # Cámbialo a false si solo compilas para Android
+  image_path: "assets/icon/fitness.png"
+  min_sdk_android: 21
